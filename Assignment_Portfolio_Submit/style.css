@@ -1,0 +1,161 @@
+*{
+    /* outline: 1px solid red; */
+}
+div.container{
+    width: 980px;
+    height: 1400px;
+    margin: 0px auto;
+
+}
+div.container .top{
+    display:block; 
+    background-color:white;
+    height: 50px;
+    }
+    
+
+div.container .top ul{
+    list-style-type: none;
+    margin: 0px;
+}
+div.container .top ul li{
+    display: inline-block;
+    text-decoration: none;
+}
+div.container .top h1{
+    display:inline-block; 
+    width: 300px;
+    font-style: italic;
+    background-color:white;
+    margin: 0px;
+    padding-left: 10px;
+}
+div.container .top h3{
+    display:inline-block; 
+    width: 600px;
+    text-decoration: none;
+    text-align: right;
+    background-color:white;
+}
+
+div.container .content{
+    min-height: 100px;
+    display:block; 
+    background-color:#422442; 
+    text-align:center;
+    margin:0px auto;
+}
+div.container .content .about{
+    display: inline-block;
+
+
+}
+/* div.container .content .about ul{
+    list-style-type: none;
+
+} */
+ul{
+    padding-left: 0px;
+    list-style-type: none;
+    vertical-align: top;
+}
+li{
+    vertical-align: top;
+}
+div.container .content .about ul li.aboutPic{
+    width: 300px;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top;
+}
+div.container .content .about ul li.aboutPic img{
+    width: 300px;
+    border: 5px;
+    outline: 5px solid #595959; 
+   
+}
+
+div.container .content .about ul li.aboutDescription{
+    width: 550px;
+    display: inline-block;
+    margin: 10px;
+}
+div.container .footer{
+    height: 50px;
+    display:block; 
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+div.container .footer img{
+    width: 15px;
+}
+.topic{
+    background-color: #595959;
+    height: 20px;
+    color: white;
+    text-align: left;
+    margin: 0px;
+    padding: 10px;
+}
+.btm_topicDetail{
+    background-color: white;
+    color: black;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: top;
+    height: 400px;
+}
+
+.topicDetail{
+    background-color: white;
+    color: black;
+    text-align: left;
+    margin: 0px;
+    padding: 10px;
+    vertical-align: top;
+
+}
+.topicDetail a{
+    color: black;
+}
+.btm_topicDetail img{
+    margin: 0px;    
+      width: 300px;
+}
+.btm_topicDetail div{
+    padding: 10px;
+}
+div.bottom .btmDetail{
+    width: 300px;
+    margin: 5px;
+    display: inline-block;
+
+}
+span.padding10{
+    padding: 10px
+}
+.tech_img{
+    display: inline-block;
+    text-align: left;
+    width: 50px;
+}
+.tech_img img{
+    width:50px;
+
+}
+
+.topic_bg{
+    background-color: white;
+    padding: 10px;
+
+}
+.button_color{
+    background-color: darkgreen;
+    color: white;
+}
+h6{
+    text-align: center;
+    vertical-align: middle;
+}
