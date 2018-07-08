@@ -1,0 +1,153 @@
+*{
+    /* outline: 1pt solid red; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+div#mainContainer{
+    width: 970px;
+}
+
+div#container1{
+    background-color: #003366;
+    height: 13px;
+    text-align: right;
+    color: white;
+    padding-right: 65px;
+    padding-top: 8px;
+    font-size: 2px;
+    vertical-align: middle;
+
+}
+div#container1 a{
+    color: yellow;
+}
+div#container2{
+    background-color: #003366;
+    height: 100px;
+    display: inline-block;
+    width: 970px;
+    vertical-align: top;
+    margin-top: 0;
+     }
+
+/* div#container1 li{
+    display: inline-block;
+} */
+#p_pic{
+    display: inline-block;
+    width: 650px;
+
+}
+div#container2 img{
+    width: 300px;
+}
+li #textSize{
+    display: block;
+    color: white;
+}
+li #search{
+    display:block;
+}
+div#container3{
+    background-color: #003366;
+    min-height: 50px;
+    text-align: center;
+}
+div#container3 div {
+  
+    background-color:#4d79ff;
+    border-radius: 10px;
+    height: 80px;
+    margin: 0px 100px 0px 100px;
+    vertical-align: top;    
+    
+}
+#c3_menu{
+
+}
+#c3_menu li{
+    display: inline-block;
+    margin-left: 20px;
+    color: white;
+    font-size: 22px;
+
+}
+#c3_menu a{
+    color: white;
+    text-decoration-line: none;
+}
+div#container4{
+    background-color: #003366;
+    min-height: 200px;
+}
+#c4_left{
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+    margin-left: 100px;
+    vertical-align: top;
+
+}
+#c4_left ul{
+    list-style-type: none;
+    padding: 0px;
+    color: white;
+}
+#c4_left ul li{
+    margin-top: 10px;
+    font-size: 15px;
+}
+#c4_left ul li a {
+    color: white;
+}
+#c4_right{
+    display: inline-block;
+    width: 450px;
+    text-align: center;
+
+}
+div#container5{
+    background-color: white;
+    text-align: center;
+}
+    div#container5 .c5_box{
+        height:220px;
+        width:250px;
+        border: 0px solid;
+        border-top-color: #4d79ff;
+        border-top-width: 8px;
+        display: inline-block;
+        margin: 10px;
+        padding: 10px;
+        vertical-align: top;
+        font-size: 10pt;
+    }
+    .c5_box li{
+        color: #4d79ff;
+        list-style-type: square;
+        
+    }
+div#container6{
+    background-color: #003366;
+    min-height: 100px;
+    text-align: center;
+    color: #4d79ff;
+    font-size: 10pt;
+}
+div#container6 div{
+    display: inline-block;
+    margin: 20pt;
+}
+#inlineBlock{
+    display: inline-block;
+    vertical-align: top;
+
+}
+#searchBox{
+    height: 30px;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 10px;  
+    text-align: right; 
+    vertical-align: middle;
+     
+}
