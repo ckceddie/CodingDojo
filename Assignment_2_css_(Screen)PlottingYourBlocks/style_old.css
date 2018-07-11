@@ -1,0 +1,109 @@
+/*CSS reset settings here*/
+body {
+
+  padding:10px;
+}
+
+
+/* 
+#wrapper{
+ width: 950px;
+ background-color: silver;
+ margin: 10px 0px 40px 40px;
+ margin-left: 40px;
+ padding: 20px;
+} */
+
+
+
+#header{
+ height: 150px;
+ background-color: green;
+ /* width:100%; */
+ display:block;
+}
+
+#wrapper{
+    background-color: blueviolet;
+    display: block;
+    width:  100%;
+ 
+}
+@media only screen and (min-width:1024px){
+    #navigation{
+        min-height: 300px;
+        width: 20%;
+        background-color: blue;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: inline-block;
+       }
+    #main_content{
+        display:inline-block;
+        width:100%;
+       }
+    #main_content{
+        width:75%;
+        background-color: rgb(204, 101, 101);
+    }
+    
+    span#mg::after{
+        content: "Over 1024 Large";
+    }
+}
+
+
+@media only screen and (min-width:481px){
+    #navigation{
+        visibility: hidden;
+    }
+       
+       #main_content{
+        background-color: rgb(197, 27, 27);
+       }
+       
+    span#mg::after{
+        content: "481-1023 M";
+    }
+}
+
+
+
+@media only screen and (max-width:480px){
+    #navigation{
+        visibility: hidden;
+    }
+    
+    #main_content{
+        display:block;
+        background-color: rgb(56, 6, 6);
+       }
+    span#mg::after{
+        content: "below 480 SM";
+    }
+}
+span #mg {
+   color: red;
+}
+#main_content{
+ min-height: 400px;
+ /* background-color: red; */
+ padding: 10px;
+ vertical-align: top;
+
+ 
+ 
+}
+.subcontents{
+ min-height: 200px;
+ width: 30%; 
+ background-color: yellow;
+ margin: 10px 0px 10px 10px;
+ display: inline-block;
+}
+#advertisement{
+ min-height: 120px;
+ width: 660px;
+ background-color: purple;
+ margin: 10px;
+}
