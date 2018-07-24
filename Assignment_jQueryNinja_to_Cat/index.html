@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ninja to Cat</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+           
+            for(var i=0; i<=4; i++){
+                $('div').before('<p class="'+i+'" id="a'+i+'"><img  src="ninja-cat/img/cat'+i+'.png" data-alt-src="'+i+'"></p>')
+                $('div').before('<p class="'+i+'" id="b'+i+'"><img src="ninja-cat/img/ninja'+i+'.png" data-alt-src="'+i+'"></p>')         
+            
+            }
+                $('#a0').hide();
+                $('#b1').hide();
+                $('#a2').hide();
+                $('#b3').hide();
+                $('#b4').hide();
+                
+            
+
+            $('img').click(function(){
+                a=$(this).attr('data-alt-src');
+                $('#a'+a).toggle();
+                $('#b'+a).toggle();
+            
+            });
+
+        })
+    </script>
+</head>
+<body>
+    <div></div>
+    <!-- <img class="0" src="ninja-cat/img/cat0.png" alt="0"><br>
+    <img class="0" src="ninja-cat/img/ninja0.png" alt="0"><br>
+    <img class="1"src="ninja-cat/img/cat1.png" alt="1"><br>
+    <img class="1"src="ninja-cat/img/ninja1.png" alt="1"><br>
+    <img class="2"src="ninja-cat/img/cat2.png" alt="2"><br>
+    <img class="2"src="ninja-cat/img/ninja2.png" alt="2"><br>
+    <img class="3"src="ninja-cat/img/cat3.png" alt="3"><br>
+    <img class="3"src="ninja-cat/img/ninja3.png" alt="3"><br>
+    <img class="4"src="ninja-cat/img/cat4.png" alt="4"><br>
+    <img class="4"src="ninja-cat/img/ninja4.png" alt="4"><br>   -->
+
+</body>
+</html>
