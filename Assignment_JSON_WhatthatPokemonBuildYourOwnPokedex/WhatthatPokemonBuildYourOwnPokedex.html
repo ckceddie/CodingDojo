@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <title>Assignment: What's that Pokemon? Build Your Own Pokedex</title>
+    <style>
+        #pic{
+            width: 600px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        #load_detail{
+
+            width: 200px;
+            display: inline-block;
+            border: 2.5px solid red;
+            vertical-align:top; 
+            padding: 10px;
+            
+        }
+            
+    </style>
+</head>
+    <script>
+        $(document).ready(function(){
+            $('#pic').append('<H1>Assignment: Pokemon</H1>');
+            for( var i=1;i<=150;i++){
+                $('#pic').append('<img id="'+i+'" src="http://pokeapi.co/media/img/'+i+'.png" width="80px" height="80px"  alt="poke image">');
+            }
+
+            $('img').click(function(){
+                var poke_path="https://pokeapi.co/api/v2/pokemon/"+$(this).attr("id");
+                var poke_img="http://pokeapi.co/media/img/"+$(this).attr("id")+".png";
+                // console.log("poke path ="+ poke_path);
+                $.get(  poke_path,function(poke){
+                    //  console.log("poke detail = "+poke);
+                    var poke_type=""; 
+                    for (var i=0; i<poke.types.length;i++){
+                        poke_type+="<li>"+poke.types[i].type.name+"</li>";
+                    };     
+                var detail=`
+                <h1> ${poke.name}</h1>
+                <img src="${poke_img}" width="80px" alt="">
+                <h4>Type</h4>
+                 ${poke_type}
+
+                <h4>Height</h4>
+                <li>${poke.height}</li>
+    
+                <h4>Weight</h4>
+                <li>${poke.weight}</li>
+                `;
+                $('#load_detail').html(detail);
+                
+                },"json");
+
+            });
+
+        });
+    </script>
+
+<body>
+    <div id="pic">
+    </div>
+    <div id="load_detail"> 
+
+    </div>
+
+</body>
+</html>
